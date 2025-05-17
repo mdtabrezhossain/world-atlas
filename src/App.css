@@ -1,0 +1,19 @@
+@import url("./style.css");
+
+.navbar {
+    grid-template-columns: 0.5fr 1fr;
+    align-items: center;
+    height: 4rem;
+    background-color: #202020;
+}
+
+.navbar_logo_container {
+    padding-left: 2rem;
+}
+
+.navbar_ul_li {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-right: 2rem;
+}
