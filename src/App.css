@@ -1,19 +1,30 @@
 @import url("./style.css");
 
 .navbar {
-    grid-template-columns: 0.5fr 1fr;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     height: 4rem;
     background-color: #202020;
 }
 
 .navbar_logo_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     padding-left: 2rem;
 }
 
-.navbar_ul_li {
+.navbar_ul_container {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
-    gap: 2rem;
     padding-right: 2rem;
+}
+
+.navbar_ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+    list-style-type: none;
 }
