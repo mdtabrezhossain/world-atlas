@@ -50,7 +50,7 @@ export default function Header() {
                 <nav className="navbar grid">
 
                     <div className='navbar_logo_container'>
-                        <NavLink to="/" className={"font-xx-large font-bold text-white link-no-underline"}>World Atlas</NavLink>
+                        <NavLink to="/home" className={"font-xx-large font-bold text-white link-no-underline"}>World Atlas</NavLink>
                     </div>
 
                     <div className='navbar_options_container flex'>

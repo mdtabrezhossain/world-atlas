@@ -7,7 +7,7 @@ import {
 } from 'react-router-dom';
 
 import App from './App.jsx';
-import HomePage from './components/UI/Home/HomePage.jsx';
+import Home from './components/UI/Home/Home.jsx';
 import CountriesPage from './components/UI/Countries/CountriesPage.jsx';
 import AboutPage from './components/UI/About/AboutPage.jsx';
 import ContactPage from './components/UI/Contact/ContactPage.jsx';
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/home",
-        Component: HomePage
+        Component: Home
       },
       {
         path: "/about",

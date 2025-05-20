@@ -17,15 +17,21 @@
 }
 
 .hero_content_button {
-    all: unset;
-    width: 7rem;
+    display: block;
+    width: 10rem;
     text-align: center;
-    margin-top: 0.5em;
+    margin-top: 1em;
     padding: 0.5em;
     border-radius: 5px;
     background-color: #ffffff;
     color: #000000;
     font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hero_content_button:hover {
+    border-radius: 50px;
 }
 
 .hero_image {
@@ -35,6 +41,7 @@
     object-fit: contain;
 }
 
+
 @media (max-width: 640px) {
     .hero {
         grid-template-columns: 1fr;
@@ -42,6 +49,9 @@
     }
 
     .hero_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         padding: 2em;
     }

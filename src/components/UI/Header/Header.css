@@ -60,6 +60,7 @@
 @media (max-width:640px) {
     .navbar_ul {
         position: absolute;
+        z-index: 999;
         inset: 0 0 auto auto;
         display: flex;
         flex-direction: column;
