@@ -7,10 +7,10 @@ import {
 } from 'react-router-dom';
 
 import App from './App.jsx';
-import HomePage from './components/UI/HomePage.jsx';
-import CountriesPage from './components/UI/CountriesPage.jsx';
-import AboutPage from './components/UI/AboutPage.jsx';
-import ContactPage from './components/UI/ContactPage.jsx';
+import HomePage from './components/UI/Home/HomePage.jsx';
+import CountriesPage from './components/UI/Countries/CountriesPage.jsx';
+import AboutPage from './components/UI/About/AboutPage.jsx';
+import ContactPage from './components/UI/Contact/ContactPage.jsx';
 import ErrorPage from './components/UI/ErrorPage.jsx';
 
 

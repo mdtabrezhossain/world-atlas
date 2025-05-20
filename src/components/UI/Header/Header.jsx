@@ -14,7 +14,7 @@ export default function Header() {
             window.removeEventListener("resize", handleSetIsOnMobileView);
             document.removeEventListener("click", exitHamMenuInMobile);
         };
-    }, [isOnMobileView, isHamMenuOpen]);
+    }, []);
 
     function checkIfIsLinkActive(isActive) {
         return isActive ? "navlink-active" : "";
@@ -37,6 +37,7 @@ export default function Header() {
         const menu = document.getElementById("navbarMenu");
         const hamIcon = document.getElementById("hamIcon");
 
+        // if the clicked element is outside the the menu and the icon
         if (!menu.contains(event.target) && !hamIcon.contains(event.target)) {
             setIsHamMenuOpen(false);
         }
