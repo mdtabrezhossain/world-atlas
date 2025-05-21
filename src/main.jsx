@@ -9,7 +9,7 @@ import {
 import App from './App.jsx';
 import Home from './components/UI/Home/Home.jsx';
 import CountriesPage from './components/UI/Countries/CountriesPage.jsx';
-import AboutPage from './components/UI/About/AboutPage.jsx';
+import About from './components/UI/About/About.jsx';
 import ContactPage from './components/UI/Contact/ContactPage.jsx';
 import ErrorPage from './components/UI/ErrorPage.jsx';
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        Component: AboutPage
+        Component: About
       },
       {
         path: "/countries",

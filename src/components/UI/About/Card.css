@@ -1,0 +1,26 @@
+.card {
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+    gap: 2em;
+    padding: 3em;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    border: 2px solid #000000;
+}
+
+.card_title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card_text p:first-child {
+    margin-bottom: 1em;
+}
+
+.card:hover {
+    background-color: #0000001c;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+}

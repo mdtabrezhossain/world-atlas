@@ -1,0 +1,30 @@
+.countryFacts-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 5em 10em 5em 10em;
+    height: 33rem;
+    height: auto;
+    background: #121212;
+    color: #000000;
+}
+
+.countryFacts-section_title {
+    /* margin-top: 1em; */
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.countryFacts-section_card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+@media (max-width:640px) {
+    .countryFacts-section {
+        padding: 5em 1em 5em 1em;
+    }
+}

@@ -44,7 +44,7 @@
 
 @media (max-width: 640px) {
     .hero {
-        grid-template-columns: 1fr;
+        grid-template-columns: unset;
         height: auto;
     }
 

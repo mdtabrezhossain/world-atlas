@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "countryName": "Australia",
+        "countryCapital": "Canberra",
+        "fact": "Australia is the only country that is also a continent, and it is home to the Great Barrier Reef—the largest coral reef system in the world."
+    },
+    {
+        "id": 2,
+        "countryName": "Brazil",
+        "countryCapital": "Brasília",
+        "fact": "Brazil contains the majority of the Amazon Rainforest, the largest tropical rainforest on Earth, covering about 60% of the country."
+    },
+    {
+        "id": 3,
+        "countryName": "Russia",
+        "countryCapital": "Moscow",
+        "fact": "Russia is the largest country in the world, spanning 11 time zones and two continents, Europe and Asia."
+    },
+    {
+        "id": 4,
+        "countryName": "Egypt",
+        "countryCapital": "Cairo",
+        "fact": "Egypt is home to the Nile River, historically considered the world’s longest river and the lifeblood of ancient civilizations."
+    },
+    {
+        "id": 5,
+        "countryName": "United States",
+        "countryCapital": "Washington, D.C.",
+        "fact": "The United States features diverse geography, including the Grand Canyon, one of the world’s deepest and most spectacular canyons."
+    },
+    {
+        "id": 6,
+        "countryName": "Indonesia",
+        "countryCapital": "Jakarta",
+        "fact": "Indonesia is the world’s largest archipelago, made up of over 18,000 islands, and sits on the Pacific Ring of Fire, making it prone to earthquakes and volcanoes."
+    },
+    {
+        "id": 7,
+        "countryName": "Canada",
+        "countryCapital": "Ottawa",
+        "fact": "Canada has more lakes than any other country in the world, containing almost 20% of the world’s fresh water."
+    },
+    {
+        "id": 8,
+        "countryName": "China",
+        "countryCapital": "Beijing",
+        "fact": "China is home to the Himalayas, including Mount Everest, the world’s highest peak, on its border with Nepal."
+    },
+    {
+        "id": 9,
+        "countryName": "Democratic Republic of the Congo",
+        "countryCapital": "Kinshasa",
+        "fact": "The Congo Rainforest, found mostly in the DRC, is the second largest tropical rainforest in the world after the Amazon."
+    },
+    {
+        "id": 10,
+        "countryName": "Argentina",
+        "countryCapital": "Buenos Aires",
+        "fact": "Argentina shares Iguazu Falls with Brazil, the largest waterfall system in the world by number of individual falls."
+    },
+    {
+        "id": 11,
+        "countryName": "Nepal",
+        "countryCapital": "Kathmandu",
+        "fact": "Nepal contains eight of the world’s ten highest mountain peaks, including Mount Everest."
+    },
+    {
+        "id": 12,
+        "countryName": "Switzerland",
+        "countryCapital": "Bern",
+        "fact": "Switzerland is famous for the Alps, a major mountain range that covers about 60% of the country’s total area."
+    },
+    {
+        "id": 13,
+        "countryName": "Greenland (Denmark)",
+        "countryCapital": "Nuuk",
+        "fact": "Greenland is the world’s largest island and is covered by the second largest ice sheet after Antarctica."
+    },
+    {
+        "id": 14,
+        "countryName": "Tanzania",
+        "countryCapital": "Dodoma",
+        "fact": "Tanzania is home to Mount Kilimanjaro, Africa’s highest peak and the world’s tallest free-standing mountain."
+    },
+    {
+        "id": 15,
+        "countryName": "Iceland",
+        "countryCapital": "Reykjavik",
+        "fact": "Iceland sits atop the Mid-Atlantic Ridge and is one of the most volcanically active countries in the world, with geysers, hot springs, and glaciers."
+    }
+]
