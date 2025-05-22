@@ -10,7 +10,7 @@ import App from './App.jsx';
 import Home from './components/UI/Home/Home.jsx';
 import CountriesPage from './components/UI/Countries/CountriesPage.jsx';
 import About from './components/UI/About/About.jsx';
-import ContactPage from './components/UI/Contact/ContactPage.jsx';
+import Contact from './components/UI/Contact/Contact.jsx';
 import ErrorPage from './components/UI/ErrorPage.jsx';
 
 
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/contact",
-        Component: ContactPage
+        Component: Contact
       }
     ]
   }

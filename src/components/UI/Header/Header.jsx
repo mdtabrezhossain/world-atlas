@@ -69,7 +69,7 @@ export default function Header() {
                             </li>
                         </ul>
 
-                        {(isOnMobileView) && (<GiHamburgerMenu id="hamIcon" onClick={handleHamIconClick} className='navbar_hamicon text-white font-size-xxlg' />)}
+                        {(isOnMobileView) && (<GiHamburgerMenu id="hamIcon" onClick={handleHamIconClick} className='navbar_hamicon text-#ffffff font-size-xxlg' />)}
                     </div>
 
                 </nav>
