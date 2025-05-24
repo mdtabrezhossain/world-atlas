@@ -13,6 +13,7 @@ export default function Header() {
         return () => {
             window.removeEventListener("resize", handleSetIsOnMobileView);
             document.removeEventListener("click", exitHamMenuInMobile);
+
         };
     }, []);
 

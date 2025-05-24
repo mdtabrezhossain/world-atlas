@@ -1,22 +1,45 @@
-import React from "react";
+import React, { useActionState } from "react";
 import "./Contact.css";
+import { useNavigate } from "react-router-dom";
+
 export default function Contact() {
+    const [state, formAction, isPending] = useActionState(formSubmit);
+    const navigate = useNavigate();
+
+    function formSubmit(prevFormData, formData) {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                const userEmail = formData.get("userEmail");
+                const userPassword = formData.get("userPassword");
+                const userMessage = formData.get("userMessage");
+                const user = {
+                    email: userEmail,
+                    password: userPassword,
+                    message: userMessage || ""
+                }
+                resolve(console.log(user));
+            }, 1000);
+            navigate("/home");
+        });
+    }
     return (
         <>
             <div className="form-container">
                 <p className="form_title font-bold">Contact Us</p>
-                <form action="" className="form">
-                    <input type="text" className="form_input" placeholder="Enter Your Name" required />
-                    <input type="text" className="form_input" placeholder="Enter Your Email" required />
+                <form action={formAction} className="form">
+                    <input name="userEmail" type="text" className="form_input" placeholder="Enter Your Email" required />
+                    <input name="userPassword" type="text" className="form_input" placeholder="Enter Your Password" required />
                     <textarea
+                        name="userMessage"
                         className="form_input"
                         rows="6"
                         placeholder="Drop Your Thoughts Here"
                         autoComplete="off"
                     ></textarea>
-                    <button className="form_button">Alright</button>
-                </form>
-            </div>
+                    <button className="form_button" disabled={isPending}>Done</button>
+                </form><br />
+                <p>Note: Do Not Worry Your Data Will Not Be Submitted. This Is A Dummy Form {"😄"}</p>
+            </div >
         </>
     )
 }

@@ -13,6 +13,11 @@
 .hero_content_title {
     font-size: 3rem;
     margin-bottom: 0.5em;
+    transition: all 0.3s ease;
+}
+
+.hero_content_title:hover {
+    transform: scale(1.1);
 }
 
 .hero_content_button {
@@ -34,10 +39,18 @@
 }
 
 .hero_image {
-    justify-self: center;
     height: 100%;
     width: 100%;
     object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.hero_image-container {
+    overflow: hidden;
+}
+
+.hero_image:hover {
+    transform: scale(1.1);
 }
 
 
