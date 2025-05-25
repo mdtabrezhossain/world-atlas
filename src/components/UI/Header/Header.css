@@ -3,6 +3,12 @@
     grid-template-columns: 2fr 1fr;
     height: 4rem;
     background-color: #202020;
+    color: #ffffff;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .navbar_logo_container {
@@ -10,6 +16,11 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 2em;
+}
+
+.navbar_logo_container a {
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 .navbar_options_container {
@@ -33,24 +44,26 @@
     transition: all 0.3s ease;
 }
 
-.navlink-active {
-    color: black;
+.navbar_ul li a:hover {
+    color: #000000;
     background-color: #ffffff;
 }
 
-.navbar_ul li a:hover {
-    color: black;
+.navbar_ul li a.navlink-active {
+    font-weight: bold;
+    color: #000000;
     background-color: #ffffff;
 }
+
 
 .navbar_hamicon {
-    color: #ffffff;
-    border-radius: 5px;
+    font-size: xx-large;
     transition: all 0.3s ease;
 }
 
 .navbar_hamicon:hover {
     padding: 0.2em;
+    border-radius: 5px;
     background-color: #ffffff;
     color: #000000;
 }

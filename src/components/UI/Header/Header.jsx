@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import "./Header.css";
 
 export default function Header() {
     const [isOnMobileView, setIsOnMobileView] = useState(window.innerWidth <= 640);
@@ -18,7 +19,7 @@ export default function Header() {
     }, []);
 
     function checkIfIsLinkActive(isActive) {
-        return isActive ? "navlink-active" : "";
+        return isActive ? "navlink-active" : "text-white";
     }
 
     function handleHamIconClick() {
@@ -32,13 +33,12 @@ export default function Header() {
         setIsOnMobileView(window.innerWidth <= 640);
     };
 
-    // closes the navbar menu when clicked outside of it in the mobile view
     function exitHamMenuInMobile(event) {
 
         const menu = document.getElementById("navbarMenu");
         const hamIcon = document.getElementById("hamIcon");
 
-        // if the clicked element is outside the the menu and the icon
+        // if the clicked element is outside the menu or icon
         if (!menu.contains(event.target) && !hamIcon.contains(event.target)) {
             setIsHamMenuOpen(false);
         }
@@ -51,26 +51,26 @@ export default function Header() {
                 <nav className="navbar grid">
 
                     <div className='navbar_logo_container'>
-                        <NavLink to="/home" className={"font-xx-large font-bold text-white link-no-underline"}>World Atlas</NavLink>
+                        <NavLink to="/home" >World Atlas</NavLink>
                     </div>
 
-                    <div className='navbar_options_container flex'>
+                    <div className='navbar_options_container'>
                         <ul id="navbarMenu" className={`navbar_ul ${isHamMenuOpen ? "" : "hide"}`}>
                             <li>
-                                <NavLink to="/home" className={({ isActive }) => `text-white link-no-underline ${checkIfIsLinkActive(isActive)}`}>Home</NavLink>
+                                <NavLink to="/home" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about" className={({ isActive }) => `text-white link-no-underline ${checkIfIsLinkActive(isActive)}`}>About</NavLink>
+                                <NavLink to="/about" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>About</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/countries" className={({ isActive }) => `text-white link-no-underline ${checkIfIsLinkActive(isActive)}`}>Countries</NavLink>
+                                <NavLink to="/countries" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>Countries</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" className={({ isActive }) => `text-white link-no-underline ${checkIfIsLinkActive(isActive)}`}>Contact</NavLink>
+                                <NavLink to="/contact" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>Contact</NavLink>
                             </li>
                         </ul>
 
-                        {(isOnMobileView) && (<GiHamburgerMenu id="hamIcon" onClick={handleHamIconClick} className='navbar_hamicon text-#ffffff font-size-xxlg' />)}
+                        {(isOnMobileView) && (<GiHamburgerMenu id="hamIcon" onClick={handleHamIconClick} className='navbar_hamicon' />)}
                     </div>
 
                 </nav>

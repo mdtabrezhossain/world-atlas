@@ -1,2 +1,15 @@
-@import url("./style.css");
-@import url("./components/UI/Header/Header.css");
+@font-face {
+    font-family: "Urbanist";
+    src: url("./assets/fonts/Urbanist-Regular.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Urbanist;
+    background-color: #121212;
+}

@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <div className="hero">
-        <div className="hero_content text-white">
-          <div className="hero_content_title font-bold">Let's Explore The World Together</div>
+        <div className="hero_content">
+          <div className="hero_content_title">Let's Explore The World Together</div>
           <div className="hero_content_text">Discover the uniqueness of every nation</div>
           <div><Link className="hero_content_button" to="/countries">Start</Link></div>
         </div>

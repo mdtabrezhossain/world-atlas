@@ -8,11 +8,13 @@
 .hero_content {
     align-self: center;
     padding: 4em;
+    color: #ffffff;
 }
 
 .hero_content_title {
     font-size: 3rem;
     margin-bottom: 0.5em;
+    font-weight: bold;
     transition: all 0.3s ease;
 }
 
