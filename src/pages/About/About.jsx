@@ -1,7 +1,7 @@
 import React from "react";
-import Card from "./Card";
+import Card from "../../components/UI/About/Card.jsx";
 import "./About.css";
-import countryFacts from "../../../assets/jsons/CountryFacts.json";
+import countryFacts from "../../assets/jsons/CountryFacts.json";
 
 export default function About() {
 

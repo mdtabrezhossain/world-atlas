@@ -7,11 +7,11 @@ import {
 } from 'react-router-dom';
 
 import App from './App.jsx';
-import Home from './components/UI/Home/Home.jsx';
-import CountriesPage from './components/UI/Countries/CountriesPage.jsx';
-import About from './components/UI/About/About.jsx';
-import Contact from './components/UI/Contact/Contact.jsx';
-import ErrorPage from './components/UI/ErrorPage.jsx';
+import Home from './pages/About/Home/Home.jsx';
+import Countries from './pages/Countries/Countries.jsx';
+import About from './pages/About/About.jsx';
+import Contact from './pages/Contact/Contact.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/countries",
-        Component: CountriesPage
+        Component: Countries
       },
       {
         path: "/contact",
