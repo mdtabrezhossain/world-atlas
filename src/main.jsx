@@ -1,4 +1,8 @@
-import { StrictMode } from 'react'
+import {
+  lazy,
+  StrictMode,
+} from 'react'
+
 import { createRoot } from 'react-dom/client'
 
 import {
@@ -7,12 +11,13 @@ import {
 } from 'react-router-dom';
 
 import App from './App.jsx';
-import Home from './pages/About/Home/Home.jsx';
-import Countries from './pages/Countries/Countries.jsx';
-import About from './pages/About/About.jsx';
-import Contact from './pages/Contact/Contact.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
 
+
+const Home = lazy(() => import("./pages/Home/Home.jsx"));
+const About = lazy(() => import("./pages/About/About.jsx"));
+const Countries = lazy(() => import("./pages/Countries/Countries.jsx"));
+const Contact = lazy(() => import("./pages/Contact/Contact.jsx"));
 
 const router = createBrowserRouter([
   {

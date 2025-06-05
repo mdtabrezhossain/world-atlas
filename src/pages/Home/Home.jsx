@@ -1,7 +1,8 @@
-import React from 'react'
-import "./Home.css";
-import heroImage from "../../../assets/images/hero-image.png";
+import React from 'react';
 import { Link } from 'react-router-dom';
+import heroImage from "../../assets/images/hero-image.png";
+import "./Home.css";
+
 
 export default function Home() {
   return (

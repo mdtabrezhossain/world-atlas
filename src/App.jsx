@@ -1,13 +1,22 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+
 import { Outlet } from 'react-router-dom';
-import Header from './components/UI/Header/Header.jsx';
+
 import "./App.css";
+
+import Header from './components/UI/Header/Header.jsx';
+import PageLoader from './components/UI/Loader/PageLoader.jsx';
+
 
 export default function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <main>
+        <Suspense fallback={<PageLoader />}>
+          <Outlet />
+        </Suspense>
+      </main>
     </>
   )
 }
