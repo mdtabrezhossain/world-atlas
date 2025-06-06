@@ -1,0 +1,24 @@
+.country-card {
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    gap: 1em;
+    transition: all 0.2s ease;
+}
+
+.country-card:hover {
+    transform: scale(1.05);
+}
+
+.country-card_image-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.country-card_image {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}

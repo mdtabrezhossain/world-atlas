@@ -1,0 +1,23 @@
+.countries-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 5em 2em 5em 2em;
+    background: #121212;
+    color: #000000;
+}
+
+.countries-section_title {
+    margin-bottom: 1em;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.country-cards-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1em;
+}
