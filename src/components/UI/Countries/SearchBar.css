@@ -1,0 +1,24 @@
+.searchbar {
+    width: 100%;
+    margin-bottom: 1em;
+    height: 2rem;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background-color: unset;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.searchbar::placeholder {
+    color: #ffffff;
+}
+
+.searchbar:hover {
+    transform: scale(0.95);
+    background-color: #ffffff;
+    color: #000000;
+}
