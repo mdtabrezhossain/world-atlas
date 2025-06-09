@@ -17,11 +17,10 @@ export default function Countries() {
 
     useEffect(() => {
         handleGetAllCountriesData();
-        console.log("Data Fetched Successfully")
     }, []);
 
     async function handleGetAllCountriesData() {
-        let countries = await getAllCountriesData();
+        const countries = await getAllCountriesData();
         setAllCountries(countries);
         setSearchedCountries(countries);
     }
@@ -36,6 +35,7 @@ export default function Countries() {
                 countryCurrency={
                     (Object.keys(country.currencies).length != 0) ? Object.entries(country.currencies)[0][1].name : ""
                 }
+
             />
         ))
     }

@@ -9,9 +9,9 @@ export default function Card({ countryFlag, countryName, countryCapital, country
                     <img className="country-card_image" loading="lazy" src={countryFlag} />
                 </div>
                 <div className="country-card_content">
-                    <p>Name: <strong>{countryName}</strong></p >
-                    <p>Capital: <strong>{countryCapital}</strong></p >
-                    <p>Currency: <strong>{countryCurrency}</strong></p >
+                    <p>Name: {countryName}</p ><br />
+                    <p>Capital: {countryCapital}</p ><br />
+                    <p>Currency: {countryCurrency}</p >
                 </div>
             </div >
 

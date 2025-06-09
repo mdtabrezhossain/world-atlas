@@ -25,6 +25,7 @@ export default function Header() {
     function handleHamIconClick() {
         if (!isHamMenuOpen) {
             setIsHamMenuOpen(true);
+            document.body.style.overflow = "hidden";
             return;
         }
     }
@@ -41,7 +42,9 @@ export default function Header() {
         // if the clicked element is outside the menu or icon
         if (!menu.contains(event.target) && !hamIcon.contains(event.target)) {
             setIsHamMenuOpen(false);
+            document.body.style.overflow = "";
         }
+
     };
 
     return (
