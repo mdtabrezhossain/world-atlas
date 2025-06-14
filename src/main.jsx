@@ -10,14 +10,18 @@ import {
   RouterProvider
 } from 'react-router-dom';
 
+import { Provider } from 'react-redux';
+
+import { store } from './store/Store.js';
+
 import App from './App.jsx';
 import ErrorPage from './pages/ErrorPage.jsx';
-
 
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const About = lazy(() => import("./pages/About/About.jsx"));
 const Countries = lazy(() => import("./pages/Countries/Countries.jsx"));
 const Contact = lazy(() => import("./pages/Contact/Contact.jsx"));
+
 
 const router = createBrowserRouter([
   {
@@ -51,6 +55,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </StrictMode>,
 )

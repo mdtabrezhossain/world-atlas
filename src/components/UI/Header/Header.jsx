@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
+
+import { useDispatch, useSelector } from 'react-redux';
+
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { FaMoon, FaSun } from 'react-icons/fa';
+
+import { changeThemeAction } from '../../../store/slices/ThemeSlice';
 import "./Header.css";
+
 
 export default function Header() {
     const [isOnMobileView, setIsOnMobileView] = useState(window.innerWidth <= 640);
     const [isHamMenuOpen, setIsHamMenuOpen] = useState(false);
+    const theme = useSelector((state) => state.themeReducer.theme);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         window.addEventListener("resize", handleSetIsOnMobileView);
@@ -47,11 +56,15 @@ export default function Header() {
 
     };
 
+    function handleThemeIconClick() {
+        dispatch(changeThemeAction());
+    }
+
     return (
         <>
             <header>
 
-                <nav className="navbar grid">
+                <nav className={`navbar ${theme}`}>
 
                     <div className='navbar_logo_container'>
                         <NavLink to="/home" >World Atlas</NavLink>
@@ -73,7 +86,14 @@ export default function Header() {
                             </li>
                         </ul>
 
+                        <div className="navbar_themeIcon" onClick={handleThemeIconClick}>
+                            {
+                                theme === "dark" ? <FaMoon /> : <FaSun />
+                            }
+                        </div>
+
                         {(isOnMobileView) && (<GiHamburgerMenu id="hamIcon" onClick={handleHamIconClick} className='navbar_hamicon' />)}
+
                     </div>
 
                 </nav>
