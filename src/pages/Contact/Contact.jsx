@@ -1,10 +1,13 @@
 import React, { useActionState } from "react";
-import "./Contact.css";
 import { useNavigate } from "react-router-dom";
+import { useSelector } from "react-redux";
+import "./Contact.css";
+
 
 export default function Contact() {
     const [state, formAction, isPending] = useActionState(formSubmit);
     const navigate = useNavigate();
+    const theme = useSelector((state) => state.themeReducer.theme);
 
     function formSubmit(prevFormData, formData) {
         return new Promise((resolve) => {
@@ -24,19 +27,19 @@ export default function Contact() {
     }
     return (
         <>
-            <div className="form-container">
+            <div className={`form-container ${theme}`}>
                 <p className="form_title font-bold">Contact Us</p>
                 <form action={formAction} className="form">
-                    <input name="userEmail" type="text" className="form_input" placeholder="Enter Your Email" required />
-                    <input name="userPassword" type="text" className="form_input" placeholder="Enter Your Password" required />
+                    <input name="userEmail" type="text" className={`form_input ${theme}`} placeholder="Enter Your Email" required />
+                    <input name="userPassword" type="text" className={`form_input ${theme}`} placeholder="Enter Your Password" required />
                     <textarea
                         name="userMessage"
-                        className="form_input"
+                        className={`form_input ${theme}`}
                         rows="6"
                         placeholder="Drop Your Thoughts Here"
                         autoComplete="off"
                     ></textarea>
-                    <button className="form_button" disabled={isPending}>Done</button>
+                    <button className={`form_button ${theme}`} disabled={isPending}>Done</button>
                 </form><br />
                 <p>Note: Do Not Worry Your Data Will Not Be Submitted. This Is A Dummy Form {"😄"}</p>
             </div >

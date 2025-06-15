@@ -3,6 +3,8 @@ import React, {
     useEffect
 } from "react";
 
+import { useSelector } from "react-redux";
+
 import { getAllCountriesData } from "../../services/CountriesApi";
 
 import Card from "../../components/UI/Countries/Card.jsx";
@@ -14,6 +16,7 @@ import "./Countries.css";
 export default function Countries() {
     const [allCountries, setAllCountries] = useState([]);
     const [searchedCountries, setSearchedCountries] = useState([]);
+    const theme = useSelector((state) => state.themeReducer.theme);
 
     useEffect(() => {
         handleGetAllCountriesData();
@@ -42,7 +45,7 @@ export default function Countries() {
 
     return (
         <>
-            <div className="countries-section">
+            <div className={`countries-section ${theme}`}>
                 <p className="countries-section_title">Meet The Countries</p>
                 <SearchBar
                     allCountries={allCountries}

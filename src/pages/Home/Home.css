@@ -5,10 +5,18 @@
     position: relative;
 }
 
+.hero.light {
+    background-color: #ffffff;
+}
+
 .hero_content {
     align-self: center;
     padding: 4em;
     color: #ffffff;
+}
+
+.hero_content.light {
+    color: #000000;
 }
 
 .hero_content_title {
@@ -34,6 +42,11 @@
     font-weight: bold;
     text-decoration: none;
     transition: all 0.3s ease;
+}
+
+.hero_content_button.light {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .hero_content_button:hover {

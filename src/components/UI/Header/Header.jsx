@@ -66,33 +66,33 @@ export default function Header() {
 
                 <nav className={`navbar ${theme}`}>
 
-                    <div className='navbar_logo_container'>
-                        <NavLink to="/home" >World Atlas</NavLink>
+                    <div className="navbar_logo-container">
+                        <NavLink className={theme} to="/home" >World Atlas</NavLink>
                     </div>
 
-                    <div className='navbar_options_container'>
-                        <ul id="navbarMenu" className={`navbar_ul ${isHamMenuOpen ? "" : "hide"}`}>
+                    <div className='navbar_options-container'>
+                        <ul id="navbarMenu" className={`navbar_ul ${theme} ${isHamMenuOpen ? "" : "hide"}`}>
                             <li>
-                                <NavLink to="/home" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>Home</NavLink>
+                                <NavLink to="/home" className={({ isActive }) => `${checkIfIsLinkActive(isActive)} ${theme}`}>Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>About</NavLink>
+                                <NavLink to="/about" className={({ isActive }) => `${checkIfIsLinkActive(isActive)} ${theme}`}>About</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/countries" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>Countries</NavLink>
+                                <NavLink to="/countries" className={({ isActive }) => `${checkIfIsLinkActive(isActive)} ${theme}`}>Countries</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact" className={({ isActive }) => `${checkIfIsLinkActive(isActive)}`}>Contact</NavLink>
+                                <NavLink to="/contact" className={({ isActive }) => `${checkIfIsLinkActive(isActive)} ${theme}`}>Contact</NavLink>
                             </li>
                         </ul>
 
                         <div className="navbar_themeIcon" onClick={handleThemeIconClick}>
                             {
-                                theme === "dark" ? <FaMoon /> : <FaSun />
+                                theme === "dark" ? <FaMoon /> : <FaSun className="navbar_themeIcon_sun" />
                             }
                         </div>
 
-                        {(isOnMobileView) && (<GiHamburgerMenu id="hamIcon" onClick={handleHamIconClick} className='navbar_hamicon' />)}
+                        {(isOnMobileView) && (<GiHamburgerMenu id="hamIcon" onClick={handleHamIconClick} className={`navbar_hamicon ${theme}`} />)}
 
                     </div>
 

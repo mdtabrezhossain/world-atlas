@@ -22,3 +22,36 @@
     background-color: #ffffff;
     color: #000000;
 }
+
+.searchbar:hover::placeholder {
+    color: #000000;
+}
+
+.searchbar:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.searchbar.light {
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+
+.searchbar.light:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.searchbar.light::placeholder {
+    color: #000000;
+}
+
+.searchbar.light:hover::placeholder {
+    color: #ffffff;
+}
+
+.searchbar.light:focus {
+    background-color: #000000;
+    color: #ffffff;
+}

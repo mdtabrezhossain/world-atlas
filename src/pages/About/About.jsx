@@ -1,9 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
+import countryFacts from "../../assets/jsons/CountryFacts.json";
 import Card from "../../components/UI/About/Card.jsx";
 import "./About.css";
-import countryFacts from "../../assets/jsons/CountryFacts.json";
 
 export default function About() {
+    const theme = useSelector((state) => state.themeReducer.theme);
 
     function generateCards({ countryName, countryCapital, fact }, index) {
 
@@ -12,8 +14,8 @@ export default function About() {
 
     return (
         <>
-            <div className="countryFacts-section">
-                <p className="countryFacts-section_title">
+            <div className={`countryFacts-section ${theme}`}>
+                <p className={`countryFacts-section_title ${theme}`}>
                     Did you know this?
                 </p>
                 <div className="countryFacts-section_card-container">
