@@ -1,0 +1,21 @@
+.error-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    color: #ffffff;
+}
+
+.error-container p {
+    font-size: x-large;
+}
+
+.error-container button {
+    padding: 1em;
+    transition: all 0.3s ease;
+}
+
+.error-container button:hover {
+    transform: scale(1.2);
+}

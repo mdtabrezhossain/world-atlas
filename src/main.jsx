@@ -15,7 +15,7 @@ import { Provider } from 'react-redux';
 import { store } from './store/Store.js';
 
 import App from './App.jsx';
-import ErrorPage from './pages/ErrorPage.jsx';
+import ErrorPage from './pages/Error/ErrorPage.jsx';
 
 const Home = lazy(() => import("./pages/Home/Home.jsx"));
 const About = lazy(() => import("./pages/About/About.jsx"));

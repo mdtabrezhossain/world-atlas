@@ -7,6 +7,7 @@
     height: auto;
     background: #121212;
     color: #000000;
+    transition: all 0.3s ease;
 }
 
 .countryFacts-section.light {
@@ -19,6 +20,7 @@
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
+    transition: all 0.3s ease;
 }
 
 .countryFacts-section_title.light {
